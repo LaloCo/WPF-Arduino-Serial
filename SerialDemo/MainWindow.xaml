@@ -1,0 +1,41 @@
+﻿<Window x:Class="SerialDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SerialDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Top"
+                    Margin="20">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="textBlockTemperatura"
+                           Text="24 °C"
+                           FontSize="40"
+                           FontFamily="Segoe UI Light"/>
+                <TextBlock x:Name="textBlockTemperaturaF"
+                           Text="/  75 °F"
+                           VerticalAlignment="Bottom"
+                           FontSize="20"
+                           Margin="20 0 0 5"
+                           FontFamily="Segoe UI Light"/>
+            </StackPanel>
+            <TextBlock x:Name="textBlockHumedad"
+                       Text="35%"
+                       HorizontalAlignment="Center"
+                       FontSize="25"
+                       FontFamily="Segoe UI Light"/>
+            <TextBlock x:Name="textBlockPuntoRocio"
+                       Margin="0 20 0 0"
+                       Text="Punto de rocío: 8°C"
+                       HorizontalAlignment="Center"
+                       FontFamily="Segoe UI Light"/>
+            <TextBlock x:Name="textBlockPuntoRocioRapido"
+                       Text="Punto de rocío rápido: 10°C"
+                       HorizontalAlignment="Center"
+                       FontFamily="Segoe UI Light"/>
+        </StackPanel>
+    </Grid>
+</Window>
